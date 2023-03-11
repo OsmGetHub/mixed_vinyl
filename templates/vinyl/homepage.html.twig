@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>
+    {{ title }}
+</h1>
+
+<body>
+    <input value="Hello world!" style="background-size: 40px">
+    <br>
+    <div>
+        Track:
+
+        <ul>
+            {% for tr in ['did','dude','hh'] %}
+            <li>
+                {{ tr }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+{% endblock %}
